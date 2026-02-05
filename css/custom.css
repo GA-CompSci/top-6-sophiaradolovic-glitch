@@ -1,7 +1,13 @@
 /*******
 COLOR CHEAT SHEET
-
-
+https://coolors.co/335c67-515d46-fff3b0-e09f3e-9e2a2b-540b0e-1f0a0b
+335c67 - dark teal
+515d46 - olive green
+fff3b0 - beige
+e09f3e - burnt yellow
+9e2a2b - bright red
+540b0e - dark red
+1f0a0b - red brown
 
 
 *****/
@@ -11,3 +17,10 @@ COLOR CHEAT SHEET
 /************************/
 /******** FONTS *********/
 /************************/
+body, p, div{
+    font-family: "Nunito", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "DM Serif Text", serif;
+}
