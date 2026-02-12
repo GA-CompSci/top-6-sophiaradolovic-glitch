@@ -13,7 +13,6 @@ e09f3e - burnt yellow
 *****/
 
 
-
 /************************/
 /******** FONTS *********/
 /************************/
@@ -23,4 +22,29 @@ body, p, div{
 
 h1, h2, h3, h4, h5, h6{
     font-family: "DM Serif Text", serif;
+}
+
+
+/************************/
+/******** HERO *********/
+/************************/
+
+header.masthead{
+    background: url("https://www.publicdomainpictures.net/pictures/200000/velka/chicago-cloud-gate-147904607276o.jpg");
+    background-size: 158%;
+    opacity: 95%
+}
+
+.masthead h1{
+    color:#e09f3e;
+    text-shadow: 4px 2px 5px whitesmoke;
+    font-size: 75px !important;
+}
+
+.masthead p {
+    color:#540b0e;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px whitesmoke;
+    font-size: 1.5em !important;
+
 }
