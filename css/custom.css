@@ -1,69 +1,89 @@
-/*******
-COLOR CHEAT SHEET
-https://coolors.co/335c67-515d46-fff3b0-e09f3e-9e2a2b-540b0e-1f0a0b
-335c67 - dark teal
+/******* COLOR CHEAT SHEET 
+https://coolors.co/335c67-515d46-fff3b0-e09f3e-9e2a2b-540b0e-1f0a0b 
+335c67 - dark teal 
 515d46 - olive green
-fff3b0 - beige
-e09f3e - burnt yellow
-9e2a2b - bright red
-540b0e - dark red
-1f0a0b - red brown
-
-
-*****/
-
-
+ fff3b0 - beige 
+ e09f3e - burnt yellow
+  9e2a2b - bright red 
+  540b0e - dark red 
+  1f0a0b - red brown 
 /************************/
 /******** FONTS *********/
 /************************/
-body, p, div{
+body,
+p,
+div {
     font-family: "Nunito", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "DM Serif Text", serif;
 }
-
 
 /************************/
 /******** HERO *********/
 /************************/
-
-header.masthead{
+header.masthead {
     background: url("https://i2.wp.com/plainmagazine.com/wp-content/uploads/2018/10/whyseeimage-chicago-09.jpg?ssl=1");
     background-size: cover;
-    opacity: 95%
+    opacity: .95;
+    position: relative;
+    background-position: center;
 }
 
-.masthead h1{
-    color:#335c67;
-    text-shadow: 4px 4px 5px whitesmoke;
+header.masthead::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.6);
+    /* light overlay */
+}
+
+header.masthead .container {
+    position: relative;
+    z-index: 2;
+}
+
+.masthead h1 {
+    color: #335c67;
+    text-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
     font-size: 80px !important;
-    font-weight: 600;
+    font-weight: 800;
+    padding: 10px 25px;
+    display: inline-block;
+    border-radius: 12px;
 }
 
 .masthead p {
-    color:#9e2a2b;
-    font-weight: 800;
-    text-shadow: 1px 2px 5px whitesmoke;
-    font-size: 1.5em !important;
-
+    color: #9e2a2b;
+    font-weight: 700;
+    font-size: 1.9em !important;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 /************************/
 /****** PORTFOLIO *******/
 /************************/
-
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption, #portfolio .container-xxl .portfolio-box .portfolio-box-caption {
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption,
+#portfolio .container-sm .portfolio-box .portfolio-box-caption,
+#portfolio .container-md .portfolio-box .portfolio-box-caption,
+#portfolio .container-lg .portfolio-box .portfolio-box-caption,
+#portfolio .container-xl .portfolio-box .portfolio-box-caption,
+#portfolio .container-xxl .portfolio-box .portfolio-box-caption {
     background: #540b0ea4;
 }
 
 /************************/
 /******** COLORS *********/
 /************************/
-
 .text-primary {
-    color: #540b0e !important;
+    color: #9e2a2b !important;
 }
 
 .bg-primary {
@@ -79,14 +99,13 @@ header.masthead{
     --bs-btn-bg: #540b0e;
     --bs-btn-border-color: whitesmoke;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #e09f3e;
+    --bs-btn-hover-bg: #9e2a2b;
     --bs-btn-hover-border-color: whitesmoke;
     --bs-btn-focus-shadow-rgb: 246, 122, 88;
     --bs-btn-active-color: #fff;
     --bs-btn-active-bg: #515d46;
     --bs-btn-active-border-color: whitesmoke;
-    --bs-btn-active-shadow: inset 0 3px 5px whitesmoke);
-
+    --bs-btn-active-shadow: inset 0 3px 5px whitesmoke;
 }
 
 hr.divider {
@@ -96,3 +115,83 @@ hr.divider {
     background-color: whitesmoke;
     opacity: 1;
 }
+
+.carousel-inner h5 {
+    color: #9e2a2b;
+    font-size: 30px !important;
+    font-weight: 600;
+}
+
+.carousel-inner p {
+    color: black;
+    font-size: 15px !important;
+    font-weight: 400;
+}
+
+.carousel-item img {
+    height: 500px;
+    size: 60px !important;
+    padding: 75px !important;
+}
+
+#mainNav .navbar-brand,
+#mainNav .navbar-nav .nav-link {
+    color: #9e2a2b !important;
+    font-weight: 700;
+}
+
+
+#mainNav .navbar-nav .nav-link:hover,
+#mainNav .navbar-nav .nav-link:focus,
+#mainNav .navbar-brand:hover {
+    color: #335c67 !important;
+}
+
+
+#mainNav .navbar-nav .nav-link.active {
+    color: #335c67 !important;
+}
+
+footer .text-muted {
+    color: #9e2a2b !important;
+    font-weight: 600;
+}
+
+#mainNav.navbar-light .navbar-nav .nav-link,
+#mainNav.navbar-shrink.navbar-light .navbar-nav .nav-link {
+    color: #9e2a2b !important;
+}
+
+#mainNav.navbar-light .navbar-nav .nav-link:hover,
+#mainNav.navbar-light .navbar-nav .nav-link:focus,
+#mainNav.navbar-shrink.navbar-light .navbar-nav .nav-link:hover,
+#mainNav.navbar-shrink.navbar-light .navbar-nav .nav-link:focus {
+    color: #540b0e !important;
+}
+
+#mainNav.navbar-light .navbar-nav .nav-link.active,
+#mainNav.navbar-shrink.navbar-light .navbar-nav .nav-link.active {
+    color: #335c67 !important;
+}
+
+#mainNav.navbar-light .navbar-brand,
+#mainNav.navbar-shrink.navbar-light .navbar-brand {
+    color: #9e2a2b !important;
+}
+
+#mainNav.navbar-light .navbar-brand:hover,
+#mainNav.navbar-shrink.navbar-light .navbar-brand:hover {
+    color: #335c67 !important;
+
+}
+
+#services h2,
+#contact h2 {
+    color: #335c67 !important;
+}
+
+#services p,
+#contact p {
+    color: black !important;
+}
+
