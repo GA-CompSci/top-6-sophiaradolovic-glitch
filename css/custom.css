@@ -1,9 +1,6 @@
 /******* COLOR CHEAT SHEET 
 https://coolors.co/335c67-515d46-fff3b0-e09f3e-9e2a2b-540b0e-1f0a0b 
 335c67 - dark teal 
-515d46 - olive green
- fff3b0 - beige 
- e09f3e - burnt yellow
   9e2a2b - bright red 
   540b0e - dark red 
   1f0a0b - red brown 
@@ -34,6 +31,7 @@ header.masthead {
     opacity: .95;
     position: relative;
     background-position: center;
+
 }
 
 header.masthead::before {
@@ -41,7 +39,6 @@ header.masthead::before {
     position: absolute;
     inset: 0;
     background: rgba(255, 255, 255, 0.6);
-    /* light overlay */
 }
 
 header.masthead .container {
@@ -57,6 +54,7 @@ header.masthead .container {
     padding: 10px 25px;
     display: inline-block;
     border-radius: 12px;
+      text-shadow: 4px 4px 4px #540b0e;
 }
 
 .masthead p {
@@ -112,7 +110,7 @@ hr.divider {
     height: 0.2rem;
     max-width: 3.25rem;
     margin: 1.5rem auto;
-    background-color: whitesmoke;
+    background-color: #335c67;
     opacity: 1;
 }
 
